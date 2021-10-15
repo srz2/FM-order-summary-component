@@ -20,6 +20,8 @@
 
 body {
     background-color: var(--color_pale-blue);
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
 }
 
 .summary-container {
@@ -128,3 +130,9 @@ body {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-image: url("images/pattern-background-desktop.svg");
+    }
+}
