@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Primary */
+    --color_pale-blue: hsl(225, 100%, 94%);
+    --color_bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --color_very-pale-blue: hsl(225, 100%, 98%);
+    --color_desaturated-blue: hsl(224, 23%, 55%);
+    --color_dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: var(--color_pale-blue);
+}
+
+.summary-container {
+    background-color: white;
+    width: 285px;
+    margin: 65px auto;
+    border-radius: 25px;
+}
+
+.summary-container .image img {
+    width: 100%;
+    height: 140px;
+    border-radius: 20px 20px 0 0;
+}
+
+.summary-container .description {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.description h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color_dark-blue);
+}
+
+.description p {
+    line-height: 1.75em;
+    margin: 10px auto;
+    font-size: 14px;
+    width: 75%;
+    color: var(--color_desaturated-blue);
+}
+
+.plan-item {
+    background-color: var(--color_very-pale-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 10% 0 10%;
+    border-radius: 15px;
+}
+
+.plan-title h2 {
+    font-size: 13px;
+    color: var(--color_dark-blue);
+    font-weight: 900;
+}
+
+.plan-subtext h3 {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color_desaturated-blue)
+}
+
+.plan-change a {
+    color: var(--color_bright-blue);
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.plan-change a:hover {
+    color: var(--color_desaturated-blue);
+    text-decoration: none;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summary-container button {
+    width: 85%;
+    border: 0;
+    margin: 10px;
+}
+
+.summary-container button {
+    cursor: pointer;
+}
+
+.summary-container .main {
+    background-color: var(--color_bright-blue);
+    color: var(--color_pale-blue);
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 10px 10px 2px var(--color_pale-blue);
+}
+
+.main:hover {
+    background-color: var(--color_desaturated-blue);
+}
+
+.summary-container .cancel {
+    background-color: white;
+    color: var(--color_desaturated-blue);
+    font-weight: 800;
+}
+
+.cancel:hover {
+    color: black;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
